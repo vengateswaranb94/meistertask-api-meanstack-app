@@ -3,15 +3,17 @@ Implement Meistertask API with Angular JS as Frontend
 
 # Instructions
 
-1. Before you access Meistertask API, you need to authenticate using Mindmeister API, 
-
+Before you access Meistertask API, you need to authenticate using Mindmeister API, 
 Signup with your Gmail address in URL: https://www.mindmeister.com/api & Get personal access token here
 
+Update it in src/app/config/credentials.json
 
+(i.e)
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" https://www.mindmeister.com/api/v2/users/me
 
 Then you receive sample JSON output as:-
 
+```json
 {  
    "id":11111111,
    "firstname":"firstname",
@@ -36,3 +38,9 @@ Then you receive sample JSON output as:-
    "lastName":"lastname",
    "image":"https://lh6.googleusercontent.com/-Guzlb3nd3WY/AAAAAAAAAAI/AAAAAAAAAAc/7VvhT9TUUyPy/photo.jpg"
 }
+```
+
+# Want to access more, Official documentations can be found in below URL's
+
+Mindmeister API: https://developers.mindmeister.com
+Meistertask API: https://developers.meistertask.com
